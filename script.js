@@ -20,13 +20,22 @@ let appleTotalCost = 0;
 let mangoTotalCost = 0;
 let strawberryTotalCost = 0;
 let userAmountLeft= userAmount;
-
+let testCondition;
 
 function add(fruit){
 	userAmount = document.querySelector('#budget').value;
 	userAmountLeft = userAmount - totalAmount;
-
-	if(userAmountLeft>7){
+	switch(fruit){
+		case 'apple':
+		testCondition=appleCost;
+		break;
+		case 'mango':
+		testCondition=mangoCost;
+		break;
+		default:
+		testCondition=strawberryCost;
+	}
+	if(userAmountLeft>=testCondition){
 		fruitName = fruit;
 
 		quantity = htmlInputs();
