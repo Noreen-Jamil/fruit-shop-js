@@ -1,0 +1,118 @@
+*{
+			box-sizing: border-box;
+			padding:0;
+			margin:0;
+		}
+		header img{
+			width:100%;
+
+		}
+		main img{
+			width:150px;
+		}
+		input::-webkit-inner-spin-button {
+   		-webkit-appearance: none;
+   		margin: 0;
+   		}
+   		main>section{
+   			box-shadow: 1px 1px 10px #E3E5E5;
+   			margin:10px 5%;
+   			border-radius: 10px;
+   		}
+   		#user-budget{
+   			display: flex;
+   			flex-direction: column;
+   			justify-content: center;
+   			align-items: center;
+   			padding:15px 2%;
+   			margin-top: 30px;
+   		}
+   		#user-budget p{
+   			margin-right:5%;
+   			font-size: 25px;
+   			color:purple;
+   			font-weight:600;
+   		}
+   		#user-budget input{
+   			border:2px solid #A6ACAF;
+   			border-radius: 25px;
+   			height:30px;
+   			width:200px;
+   			outline:none;
+   			text-align:center;
+   			font-size: 18px;
+   			margin-top: 15px;
+   		}
+   		#fruits{
+   			margin:5% 0;
+   			display: grid;
+   			grid-template-columns:1fr;
+   			grid-template-rows: repeat(3,1fr);
+   			grid-gap:5%;
+   			box-shadow: none;
+   			padding:10vh 5% 25vh 5%; 
+   		}
+   		#fruits>section{
+   			display: flex;
+   			flex-direction: column;
+   			justify-content: space-around;
+   			align-items: center;
+   			box-shadow: 1px 1px 10px #E3E5E5;
+   			border-radius: 10px;
+   			padding:20px 0;
+
+   		}
+   		#fruits p{
+   			font-size: 18px;
+   			font-weight:600;
+   		}
+   		.quantity-selection{
+   			display: flex;
+   		}
+   		.quantity-selection>p{
+   			width:40px;
+   			border:1px solid gray;
+   			text-align: center;
+   			font-size: 18px;
+   			font-weight:500;
+   		}
+   		.quantity-selection button{
+   			width:30px;
+   			height:30px;
+   		}
+   		#amount-summary{
+   			display: flex;
+   			flex-direction: column;
+   			justify-content: space-around;
+   			padding:5%;
+   		}
+   		#amount-summary h1{
+   			color:purple;
+   			margin-bottom: 15px ;
+   		}
+   		#amount-summary p{
+   			color:green;
+   			font-size: 20px;
+   			font-weight:600;
+   			margin: 5px 0;
+   		}
+   		#amount-summary p>span{
+   			color:gray;
+   			font-size: 20px;
+   		}
+   		#amount-summary button{
+   			width:200px;
+   		}
+   		@media only screen and (min-width: 768px){
+   			#user-budget{
+   			flex-direction: row;
+   			}
+   			#user-budget input{
+   			margin-top: 0;
+   			}
+   			#fruits{
+   			grid-template-columns:repeat(3,1fr);
+   			grid-template-rows: 300px;
+   			padding:0 5%; 
+   			}
+   		}
