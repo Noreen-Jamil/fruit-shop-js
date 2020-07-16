@@ -25,34 +25,35 @@ let testCondition;
 function add(fruit){
 	userAmount = document.querySelector('#budget').value;
 	userAmountLeft = userAmount - totalAmount;
-	switch(fruit){
-		case 'apple':
-		testCondition=appleCost;
-		break;
-		case 'mango':
-		testCondition=mangoCost;
-		break;
-		default:
-		testCondition=strawberryCost;
-	}
-	if(userAmountLeft>=testCondition){
-		fruitName = fruit;
-
-		quantity = htmlInputs();
-
-		if(userAmount > 0){
-		quantity++;
-		
-		fruitSelector(fruitName,quantity);
-
-		}else{
-			alert("Please input your budget");
-		}
-
-		total();
-		
+	console.log("userAmount "+ userAmount);
+	if (userAmount<=0) {
+		alert("Please input your budget");
 	}else{
-		alert("You don't have enough money");
+		switch(fruit){
+			case 'apple':
+			testCondition=appleCost;
+			break;
+			case 'mango':
+			testCondition=mangoCost;
+			break;
+			default:
+			testCondition=strawberryCost;
+		}
+		if(userAmountLeft>=testCondition){
+			fruitName = fruit;
+
+			quantity = htmlInputs();
+			console.log("userAmount "+ userAmount);
+			
+			quantity++;
+			
+			fruitSelector(fruitName,quantity);
+
+			total();
+			
+		}else{
+			alert("You don't have enough money");
+		}
 	}
 }
 
