@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fruit Shop</title>
+	<script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="images/logo.jpg" alt="logo">
+	</header>
+
+	<main>
+		<!-- User's Budget -->
+		<section id="user-budget">
+			<p>Input Your Budget</p>
+			<input type="number" id="budget">
+		</section>
+		<section id="fruits">
+			<section id="apple-section">
+				<p>Per Apple: 7 Rs</p>
+				<img src="images/apple.jpg" alt="apple image">
+				<div class="quantity-selection">
+					<button onclick="add('apple')">+</button>
+					<p id="apple-input">0</p>
+					<button onclick="sub('apple')">-</button>
+				</div>
+			</section>
+
+			<section id="mango-section">
+				<p>Per Mango: 15 Rs</p>
+				<img src="images/mango.jpg" alt="apple image">
+				<div class="quantity-selection">
+					<button onclick="add('mango')">+</button>
+					<p id="mango-input">0</p>
+					<button onclick="sub('mango')">-</button>
+				</div>
+			</section>
+
+			<section id="strawberry-section">
+				<p>Per Strawberry: 10 Rs</p>
+				<img src="images/strawberry.jpg" alt="apple image">
+				<div class="quantity-selection">
+					<button onclick="add('strawberry')">+</button>
+					<p id="strawberry-input" >0</p>
+					<button onclick="sub('strawberry')">-</button>
+				</div>
+			</section>
+		</section>
+		<!-- Show Total and Remaining Amount -->
+		<section id="amount-summary">
+			<h1>Your Shopping Summary</h1>
+			<p>Fruit list: <span id="fruit-list">  </span> </p>
+			<p>Quantity: <span id="total-quantity"> 0 </span> </p>
+			<p>Total Amount: <span id="total-amount"> 0 </span> </p>
+			<p>Remaining Amount: <span id="remaining-amount"> 0 </span> </p>
+
+		</section>
+	</main>
+
+	<footer>
+		
+	</footer>
+</body>
+</html>
