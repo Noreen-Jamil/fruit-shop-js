@@ -146,7 +146,7 @@ function totalAmountCall(){
 
 	quantitySpan.innerHTML = totalQuantity;
 
-	remainingAmountSpan.innerHTML = userAmount - totalAmount;
+	remainingAmountSpan.innerHTML = userAmount - totalAmount + " Rs";
 
 }
 
