@@ -50,12 +50,7 @@ function add(fruit){
 		}
 
 		total();
-		userAmountLeft = userAmount - totalAmount;
-		console.log("userAmountLeft "+ userAmountLeft );
-		if(userAmountLeft<=0){
-		alert("Money 0");
-	
-		}
+		
 	}else{
 		alert("You don't have enough money");
 	}
